@@ -23,17 +23,7 @@ body {
 }
 
 .container {
-    max-width: 680px;
-    background: rgba(23, 14, 31, 0.9);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    padding: 40px;
-    border: 1px solid var(--periwinkle);
-    margin: 0 auto;
-    align-items: center;
-}
-.container {
-    max-width: 800px;
+    max-width: 700px;
     background: var(--midnight-violet);  
     border-radius: 0;  
     padding: 40px;
@@ -46,7 +36,7 @@ body {
 
 .container h {  
     font-family: 'Pixelify Sans', sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
     color: var(--soft-periwinkle);  
     text-shadow: none;  
@@ -65,7 +55,7 @@ body {
 #taskInput {
     flex: 1;
     padding: 15px 20px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: 'Jersey 10', sans-serif; 
     background: var(--midnight-violet);  
     border: 3px solid var(--periwinkle);  
@@ -116,7 +106,7 @@ body {
     border-left: 6px solid var(--soft-periwinkle);  
     border: 3px solid var(--midnight-violet);
     font-family: 'Pixelify Sans', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--midnight-violet);  
     transition: none;
     box-shadow: 4px 4px 0 var(--dark-raspberry); 
@@ -131,5 +121,28 @@ body {
     box-shadow: 8px 8px 0 var(--midnight-violet);
 }
 
+.delete-btn {
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    color: var(--dark-raspberry);
+    cursor: pointer;
+    padding: 5px 12px;
+    margin-left: auto; 
+    font-weight: 700;
+    font-family: 'Jersey 10', sans-serif;
+    border-radius: 0;
+    transition: all 0.2s ease;
+}
 
+.delete-btn:hover {
+    background: var(--dark-raspberry);
+    color: var(--midnight-violet);
+    box-shadow: 3px 3px 0 var(--periwinkle);
+    transform: translate(1px, 1px);
+}
 
+.delete-btn:active {
+    transform: translate(3px, 3px);
+    box-shadow: 1px 1px 0 var(--periwinkle);
+}
